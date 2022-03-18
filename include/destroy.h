@@ -20,4 +20,6 @@ int destroy_shieva(game_t *game);
 
 int destroy_tiles(game_t *game);
 
+int destroy_map(game_t *game);
+
 #endif /* DESTROY_H_ */

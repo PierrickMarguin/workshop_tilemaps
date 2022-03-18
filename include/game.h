@@ -15,6 +15,8 @@
 #include <SFML/Network.h>
 #include <SFML/Graphics.h>
 
+#include "map.h"
+
 typedef struct mouse_s {
     int x;
     int y;
@@ -33,6 +35,7 @@ typedef struct game_s {
     sfTexture *tiles_texture;
     sfSprite **tiles;
     sfVector2f pos;
+    map_t *map;
 } game_t;
 
 int create_struct(game_t *game);

@@ -9,7 +9,7 @@
 #include "game.h"
 #include "destroy.h"
 
-static int (*destroy_tab[])(game_t *) = {destroy_window, destroy_view, destroy_clock, destroy_shieva, destroy_tiles, NULL};
+static int (*destroy_tab[])(game_t *) = {destroy_window, destroy_view, destroy_clock, destroy_shieva, destroy_tiles, destroy_map, NULL};
 
 int destroy_struct(game_t *game)
 {

@@ -11,12 +11,14 @@ SRC			=	src/create/create_clock.c \
 				src/create/create_view.c \
 				src/create/create_shieva.c \
 				src/create/create_tiles.c \
+				src/create/create_map.c \
 				src/destroy/destroy_clock.c \
 				src/destroy/destroy_struct.c \
 				src/destroy/destroy_window.c \
 				src/destroy/destroy_view.c \
 				src/destroy/destroy_shieva.c \
 				src/destroy/destroy_tiles.c \
+				src/destroy/destroy_map.c \
 				src/draw/draw.c \
 				src/draw/draw_map.c \
 				src/draw/draw_shieva.c \

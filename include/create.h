@@ -20,4 +20,6 @@ int create_shieva(game_t *game);
 
 int create_tiles(game_t *game);
 
+int create_map(game_t *game);
+
 #endif /* CREATE_H_ */

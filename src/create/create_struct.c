@@ -16,7 +16,7 @@ static void init_struct(game_t *game)
     game->pos.y = 540;
 }
 
-static int (*create_tab[])(game_t *) = {create_window, create_view, create_clock, create_shieva, create_tiles, NULL};
+static int (*create_tab[])(game_t *) = {create_window, create_view, create_clock, create_shieva, create_tiles, create_map, NULL};
 
 int create_struct(game_t *game)
 {

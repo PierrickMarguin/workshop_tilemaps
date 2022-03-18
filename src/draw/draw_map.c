@@ -8,12 +8,6 @@
 #include "game.h"
 #include "draw.h"
 
-static const int map[] = {0, 1, 2, 2,           \
-                          0, 2, 2, 2,            \
-                          3, 3, 3, 2};
-
-static const sfVector2i map_size = {4, 3};
-
 int draw_map(game_t *game)
 {
     int count = 0;
@@ -21,12 +15,12 @@ int draw_map(game_t *game)
 
     sfView_setCenter(game->view, game->pos);
     sfRenderWindow_setView(game->window, game->view);
-    while (count < map_size.x * map_size.y) {
-        sfSprite_setPosition(game->tiles[map[count]], pos);
-        sfRenderWindow_drawSprite(game->window, game->tiles[map[count]], NULL);
+    while (count < game->map->x * game->map->y) {
+        sfSprite_setPosition(game->tiles[game->map->map[count]], pos);
+        sfRenderWindow_drawSprite(game->window, game->tiles[game->map->map[count]], NULL);
         pos.x += 16 * 4;
         count++;
-        if (count % map_size.x == 0) {
+        if (count % game->map->x == 0) {
             pos.x = 0;
             pos.y += 16 * 4;
         }
